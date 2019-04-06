@@ -1,0 +1,19 @@
+#!/bin/bash
+
+main()
+{
+	if [[ $1 == *"a"* ]];then
+
+		python assign_2_1a.py $2 $3 $4 $@
+
+	fi
+	if [[ $1 == *"b"* ]];then
+
+		python assign_2_1b.py $2 $3 $4
+	fi
+	if [[ $1 == *"c"* ]];then
+		python assign_2_1c.py $2 $3 $4
+	fi
+}
+
+main $1 $2 $3 $4
